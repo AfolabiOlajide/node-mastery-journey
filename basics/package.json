@@ -1,0 +1,24 @@
+{
+    "name": "basics",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsx watch src/index.ts",
+        "process-object": "tsx src/process-object.ts",
+        "basics-crypto": "tsx src/crypto.ts",
+        "os": "tsx src/os.ts",
+        "path": "tsx src/path.ts",
+        "timers": "tsx src/timers.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "devDependencies": {
+        "@types/node": "^22.20.2",
+        "tsx": "^4.23.13",
+        "typescript": "^7.0.2"
+    }
+}
