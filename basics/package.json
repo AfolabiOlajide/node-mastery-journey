@@ -10,7 +10,8 @@
         "basics-crypto": "tsx src/crypto.ts",
         "os": "tsx src/os.ts",
         "path": "tsx src/path.ts",
-        "timers": "tsx src/timers.ts"
+        "timers": "tsx src/timers.ts",
+        "callback": "tsx src/callback-promise-async-await.ts"
     },
     "keywords": [],
     "author": "",
