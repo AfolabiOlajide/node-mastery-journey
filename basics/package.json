@@ -13,7 +13,8 @@
         "timers": "tsx src/timers.ts",
         "callback": "tsx src/callback-promise-async-await.ts",
         "fs": "tsx src/fs.ts",
-        "buffers": "tsx src/buffers.ts"
+        "buffers": "tsx src/buffers.ts",
+        "url": "tsx src/url.ts"
     },
     "keywords": [],
     "author": "",
