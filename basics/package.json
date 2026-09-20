@@ -14,7 +14,8 @@
         "callback": "tsx src/callback-promise-async-await.ts",
         "fs": "tsx src/fs.ts",
         "buffers": "tsx src/buffers.ts",
-        "url": "tsx src/url.ts"
+        "url": "tsx src/url.ts",
+        "event-emitters": "tsx src/event-emitters.ts"
     },
     "keywords": [],
     "author": "",
