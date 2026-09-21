@@ -6,7 +6,8 @@
     "scripts": {
         "basic-server": "tsx src/basic-http-server.ts",
         "routing": "tsx src/routing.ts",
-        "req-body": "tsx src/reading-body.ts"
+        "req-body": "tsx src/reading-body.ts",
+        "json-response": "tsx src/json-response.ts"
     },
     "keywords": [],
     "author": "",
