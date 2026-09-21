@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "basic-server": "tsx src/basic-http-server.ts",
-        "routing": "tsx src/routing.ts"
+        "routing": "tsx src/routing.ts",
+        "req-body": "tsx src/reading-body.ts"
     },
     "keywords": [],
     "author": "",
