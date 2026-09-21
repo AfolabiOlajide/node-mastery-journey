@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "basic-server": "tsx src/basic-http-server.ts"
+        "basic-server": "tsx src/basic-http-server.ts",
+        "routing": "tsx src/routing.ts"
     },
     "keywords": [],
     "author": "",
