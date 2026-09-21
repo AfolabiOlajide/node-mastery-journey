@@ -15,7 +15,8 @@
         "fs": "tsx src/fs.ts",
         "buffers": "tsx src/buffers.ts",
         "url": "tsx src/url.ts",
-        "event-emitters": "tsx src/event-emitters.ts"
+        "event-emitters": "tsx src/event-emitters.ts",
+        "streams": "tsx src/streams.ts"
     },
     "keywords": [],
     "author": "",
