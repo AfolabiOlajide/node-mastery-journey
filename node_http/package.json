@@ -7,7 +7,8 @@
         "basic-server": "tsx src/basic-http-server.ts",
         "routing": "tsx src/routing.ts",
         "req-body": "tsx src/reading-body.ts",
-        "json-response": "tsx src/json-response.ts"
+        "json-response": "tsx src/json-response.ts",
+        "api-call": "tsx src/external-api-call.ts"
     },
     "keywords": [],
     "author": "",
