@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        /* Target and Environment */
+        "target": "ES2022" /* Specify ECMAScript target version */,
+        "module": "nodenext" /* Specify module code generation */,
+        "moduleResolution": "nodenext" /* How TypeScript looks up a file from a given require/import path */,
+        "lib": [
+            "ES2022"
+        ] /* Specify library files to be included in the compilation */,
+
+        /* Directories */
+        "rootDir": "./src" /* Specify the root folder of input files */,
+        "outDir": "./dist" /* Redirect output structure to the directory */,
+
+        /* Strictness & Safety */
+        "strict": true /* Enable all strict type-checking options */,
+        "noImplicitAny": true /* Raise error on expressions and declarations with an implied 'any' type */,
+        "strictNullChecks": true /* Enable strict null checks */,
+
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+
+        /* Interoperability & Build Performance */
+        "esModuleInterop": true /* Emit additional JavaScript to ease importing CommonJS modules */,
+        "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file */,
+        "skipLibCheck": true /* Skip type checking of declaration files (.d.ts) */,
+
+        "types": ["node"]
+    },
+    "include": ["src/**/*"] /* Files to include in compilation */,
+    "exclude": ["node_modules", "dist"] /* Files to ignore */
+}
