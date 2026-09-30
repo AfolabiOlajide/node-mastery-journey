@@ -8,6 +8,7 @@
         "build": "tsc",
         "start": "node dist/server.js",
         "migrate": "tsx src/scripts/migrate.ts",
+        "create:admin": "tsx src/scripts/createAdmin.ts",
         "docker:up": "docker compose up -d",
         "docker:down": "docker compose down"
     },
