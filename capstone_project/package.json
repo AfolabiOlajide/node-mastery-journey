@@ -9,6 +9,8 @@
         "start": "node dist/server.js",
         "migrate": "tsx src/scripts/migrate.ts",
         "create:admin": "tsx src/scripts/createAdmin.ts",
+        "get:users": "tsx src/scripts/getAllUsers.ts",
+        "delete:users": "tsx src/scripts/deleteUser.ts",
         "docker:up": "docker compose up -d",
         "docker:down": "docker compose down"
     },

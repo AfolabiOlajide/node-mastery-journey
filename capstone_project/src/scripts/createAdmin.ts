@@ -13,13 +13,13 @@ async function createAdminUser(email: string, password: string): Promise<User> {
     if (password.length < MIN_PASSWORD_LENGTH) {
         throw new Error("Password length must be more than 6");
     }
-    const hashedPassword = hashPassword(password);
+    const hashedPassword = await hashPassword(password);
 
     const result = await pool.query<DBUserRow>(
         `
             INSERT INTO users (email, password_hash, role)
             VALUES ($1, $2, 'ADMIN')
-            RETURNING id, email, role, created_at
+            RETURNING id, email, role, password_hash, created_at
         `,
         [email, hashedPassword],
     );
