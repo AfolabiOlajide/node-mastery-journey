@@ -2,6 +2,7 @@ import { MAX_TITLE_LENGTH } from "../constants";
 import { AppError } from "../errors/AppErrors";
 import {
     createTask,
+    fetchTaskByTaskIdUserId,
     fetchTaskByUserId,
 } from "../repositories/user.task.repository";
 import { Task } from "../types/tasks";
@@ -30,4 +31,16 @@ export async function createUserTasks(
 
 export async function getAllUserTasks(userId: string): Promise<Task[]> {
     return fetchTaskByUserId(userId);
+}
+
+export async function getUserTaskById(
+    userId: string,
+    taskId: string,
+): Promise<Task> {
+    const task = await fetchTaskByTaskIdUserId(userId, taskId);
+    if (!task) {
+        throw new AppError(404, "Task not found");
+    }
+
+    return task;
 }

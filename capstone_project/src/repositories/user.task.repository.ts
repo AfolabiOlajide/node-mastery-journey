@@ -29,3 +29,19 @@ export async function fetchTaskByUserId(userId: string): Promise<Task[]> {
 
     return result.rows;
 }
+
+export async function fetchTaskByTaskIdUserId(
+    userId: string,
+    taskId: string,
+): Promise<Task | null> {
+    const result = await pool.query<TaskRow>(
+        `
+        SELECT id, title, status, user_id, created_at, updated_at
+        FROM support_tasks
+        WHERE id = $2 AND user_id = $1;
+        `,
+        [taskId, userId],
+    );
+
+    return result.rows[0] ?? null;
+}

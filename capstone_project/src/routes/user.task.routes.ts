@@ -3,6 +3,7 @@ import { authenticate } from "../middlewares/auth.middleware";
 import {
     createUserTasks,
     getAllUserTasks,
+    getUserTaskById,
 } from "../services/user.task.service";
 
 export const userTaskRouter = Router();
@@ -27,6 +28,18 @@ userTaskRouter.get("/", async (req, res, next) => {
         res.status(200).json({
             success: true,
             data: { tasks },
+        });
+    } catch (error) {
+        next(error);
+    }
+});
+
+userTaskRouter.get("/:taskId", async (req, res, next) => {
+    try {
+        const task = await getUserTaskById(req.user!.userId, req.params.taskId);
+        res.status(200).json({
+            success: true,
+            data: task,
         });
     } catch (error) {
         next(error);
