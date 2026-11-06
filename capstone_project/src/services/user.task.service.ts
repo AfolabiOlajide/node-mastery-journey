@@ -1,6 +1,9 @@
 import { MAX_TITLE_LENGTH } from "../constants";
 import { AppError } from "../errors/AppErrors";
-import { createTask } from "../repositories/user.task.repository";
+import {
+    createTask,
+    fetchTaskByUserId,
+} from "../repositories/user.task.repository";
 import { Task } from "../types/tasks";
 
 function validateTitle(title: unknown): string {
@@ -23,4 +26,8 @@ export async function createUserTasks(
 ): Promise<Task> {
     const validTitle = validateTitle(title);
     return createTask(userId, validTitle);
+}
+
+export async function getAllUserTasks(userId: string): Promise<Task[]> {
+    return fetchTaskByUserId(userId);
 }
